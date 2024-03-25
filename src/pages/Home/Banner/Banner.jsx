@@ -49,7 +49,7 @@ const laptop = {
 const Banner = () => {
 	return (
 		<div className="overflow-hidden">
-			<Container>
+			<Container className="px-5">
 				<div className="mt-10 lg:mt-0 grid md:grid-cols-2 h-screen place-content-center items-center ">
 					<motion.div variants={intro} initial="hidden" animate="visible">
 						<motion.h1

@@ -2,11 +2,6 @@ import { useRef } from 'react'
 import image from '../../../assets/images/macbook 1.png'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const imgIntro = {
-	initial: { opacity: 0, x: -200 },
-	animate: { opacity: 1, x: 0 },
-}
-
 const Details = () => {
 	const ref = useRef(null)
 	const { scrollYProgress } = useScroll({
@@ -18,7 +13,7 @@ const Details = () => {
 	const xvalue2 = useTransform(scrollYProgress, [0, 0.8], [200, 1])
 
 	return (
-		<div className="my-24 grid grid-cols-2 overflow-hidden gap-8 items-center justify-center">
+		<div className="my-24 grid lg:grid-cols-2 overflow-hidden gap-8 items-center justify-center">
 			<motion.div
 				ref={ref}
 				// variants={imgIntro}
@@ -28,7 +23,11 @@ const Details = () => {
 			>
 				<img src={image} alt="" />
 			</motion.div>
-			<motion.div style={{ x: xvalue2 }} className="mr-8">
+			<motion.div
+				ref={ref}
+				style={{ x: xvalue2 }}
+				className="mx-3 lg:mx-0 lg:mr-8"
+			>
 				<h1 className="text-4xl font-bold mb-20">Who we are</h1>
 				<p>
 					At <span className="font-bold">iRepair</span>, we love MacBooks
