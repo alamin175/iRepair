@@ -7,7 +7,7 @@ const DataRecovery = () => {
 		<motion.div
 			ref={componentRef}
 			style={style}
-			className="lg:flex rounded-lg bg-bgPrimary h-full w-full col-span-8"
+			className="lg:flex rounded-lg bg-bgPrimary h-full w-full col-span-12 lg:col-span-8"
 		>
 			<div className="flex flex-col justify-between ">
 				<h3 className="font-bold p-2 pb-0">Data Recovery</h3>

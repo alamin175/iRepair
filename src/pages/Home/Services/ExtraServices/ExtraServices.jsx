@@ -9,7 +9,7 @@ const ExtraServices = () => {
 			<motion.div
 				ref={componentRef}
 				style={style}
-				className="flex p-4 rounded-lg bg-bgPrimary h-full w-full col-span-4"
+				className="flex p-4 rounded-lg bg-bgPrimary h-full w-full col-span-12 lg:col-span-4"
 			>
 				<div className="flex flex-col  ">
 					<h1 className="font-bold pb-0 text-6xl">
@@ -22,7 +22,7 @@ const ExtraServices = () => {
 			<motion.div
 				ref={componentRef}
 				style={style}
-				className="flex p-4 rounded-lg bg-bgPrimary h-full w-full col-span-4"
+				className="flex p-4 rounded-lg bg-bgPrimary h-full w-full col-span-12 lg:col-span-4"
 			>
 				<div className="flex flex-col  ">
 					<h1 className="font-bold pb-0 text-6xl">
@@ -38,7 +38,7 @@ const ExtraServices = () => {
 			<motion.div
 				ref={componentRef}
 				style={style}
-				className="flex  p-4 rounded-lg bg-bgPrimary h-full w-full col-span-4"
+				className="flex  p-4 rounded-lg bg-bgPrimary h-full w-full col-span-12 lg:col-span-4"
 			>
 				<motion.div
 					ref={componentRef}

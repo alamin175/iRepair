@@ -9,7 +9,7 @@ const ChipReplace = () => {
 		<motion.div
 			ref={componentRef}
 			style={style}
-			className="relative rounded-lg bg-bgPrimary w-full col-span-4"
+			className="relative rounded-lg bg-bgPrimary w-full col-span-12 lg:col-span-4"
 		>
 			<div
 				className="absolute rounded-lg inset-0 bg-cover bg-no-repeat"
